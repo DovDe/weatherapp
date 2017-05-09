@@ -16,11 +16,11 @@
       // Public API here
       return $resource('http://api.openweathermap.org/data/2.5/weather?q=:location&units=imperial&APPID=07e695f934aeb5d1b818b0f063db871a', {}, {
         query: {
-          method:'GET',
-          params:{
-            location: 'Seattle,us'
-          },
-          isArray:false
-        }
+        method:'GET',
+        params:{
+          cityID: '4717560' // Paris, France ID
+        },
+        isArray:false
+      }
       });
     });
